@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Рекламное агентство в Ачинске | Профессиональные маркетинговые решения</title>
+ <style>
+ /* Общие стили */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Arial', sans-serif;
+ }
+ 
+ body {
+ color: #333;
+ line-height: 1,6;
+ }
+ 
+ .container {
+ width: 90%;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 15px;
+ }
+ 
+ /* Шапка */
+ header {
+ background-color: #fff;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ position: fixed;
+ width: 100%;
+ top: 0;
+ z-index: 1000;
+ }
+ 
+ .header-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 15px 0;
+ }
+ 
+ .логотип {
+ размер шрифта: 24 пикселя;
+ шрифт полужирный;
+ color: #0066cc;
+ }
+ 
+ .logo span {
+ color: #ff6600;
+ }
+ 
+ nav ul {
+ display: flex;
+ list-style: none;
+ }
+ 
+ nav ul li {
+ margin-left: 25px;
+ }
+ 
+ nav ul li a {
+ text-decoration: none;
+ color: #333;
+ font-weight: 500;
+ transition: color 0.3s;
+ }
+ 
+ nav ul li a:hover {
+ color: #0066cc;
+ }
+ 
+ /* Раздел «Герой» */
+ .hero {
+ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1200x600/0066cc/white?text=Ачинск+Рекалам') no-repeat center center/cover;
+ высота: 80vh;
+ отображение: flex;
+ выравнивание по центру;
+ цвет: #fff;
+ text-align: center;
+ margin-top: 70px;
+ }
+ 
+ .hero-content {
+ max-width: 800px;
+ margin: 0 auto;
+ }
+ 
+ .hero h1 {
+ font-size: 48px;
+ margin-bottom: 20px;
+ }
+ 
+ .hero p {
+ размер шрифта: 20 пикселей;
+ margin-bottom: 30px;
+ }
+ 
+ .btn {
+ display: inline-block;
+ background-color: #ff6600;
+ color: #fff;
+ padding: 12px 30px;
+ text-decoration: none;
+ border-radius: 5px;
+ font-weight: bold;
+ transition: background-color 0.3s;
+ }
+ 
+ .btn:hover {
+ background-color: #e55a00;
+ }
+ 
+ /* О нас */
+ .about {
+ padding: 80px 0;
+ background-color: #f9f9f9;
+ }
+ 
+ .section-title {
+ text-align: center;
+ margin-bottom: 50px;
+ }
+ 
+ .section-title h2 {
+ font-size: 36px;
+ color: #0066cc;
+ margin-bottom: 15px;
+ }
+ 
+ .section-title p {
+ color: #666;
+ max-width: 700px;
+ margin: 0 auto;
+ }
+ 
+ .about-content {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+ 
+ .about-text {
+ flex: 1;
+ min-width: 300px;
+ padding-right: 30px;
+ }
+ 
+ .about-image {
+ flex: 1;
+ min-width: 300px;
+ }
+ 
+ .about-image img {
+ width: 100%;
+ border-radius: 10px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Услуги */
+ .services {
+ padding: 80px 0;
+ }
+ 
+ .services-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 30px;
+ margin-top: 50px;
+ }
+.service-card {
+ background-color: #fff;
+ border-radius: 10px;
+ padding: 30px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+ transition: transform 0.3s;
+ }
+ 
+ .service-card:hover {
+ transform: translateY(-10px);
+ }
+ 
+ .service-card h3 {
+ color: #0066cc;
+ margin: 20px 0;
+ }
+ 
+ .service-icon {
+ font-size: 40px;
+ color: #ff6600;
+ }
+ 
+ /* Контакты */
+ .contact {
+ padding: 80px 0;
+ background-color: #f9f9f9;
+ }
+ 
+ .contact-content {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 40px;
+ }
+ 
+ .contact-info {
+ flex: 1;
+ min-width: 300px;
+ }
+ 
+ .contact-form {
+ flex: 1;
+ min-width: 300px;
+ }
+ 
+ .contact-info h3 {
+ цвет: #0066cc;
+ отступ снизу: 20px;
+ }
+ 
+ .contact-info p {
+ отступ снизу: 10px;
+ }
+ 
+ .contact-info i {
+ цвет: #ff6600;
+ отступ справа: 10px;
+ }
+ 
+ .form-group {
+ margin-bottom: 20px;
+ }
+ 
+ .form-group label {
+ display: block;
+ margin-bottom: 5px;
+ font-weight: 500;
+ }
+ 
+ .form-group input,
+ .form-group textarea {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ }
+ 
+ .form-group textarea {
+ высота: 150 пикселей;
+ }
+ 
+ /* Нижний колонтитул */
+footer {
+ цвет фона: #0066cc;
+ цвет текста: #fff;
+ padding: 40px 0;
+ text-align: center;
+ }
+ 
+ .footer-content {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ }
+ 
+ .footer-section {
+ flex: 1;
+ min-width: 300px;
+ margin-bottom: 30px;
+ }
+ 
+ .footer-section h3 {
+ margin-bottom: 20px;
+ }
+ 
+ .footer-bottom {
+ margin-top: 30px;
+ padding-top: 20px;
+ border-top: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ 
+ /* Адаптивность */
+ max-width: 768px {
+ .header-container {
+ flex-direction: column;
+ }
+ 
+ nav ul {
+ margin-top: 15px;
+ }
+ 
+ nav ul li {
+ margin-left: 15px;
+ margin-right: 15px;
+ }
+ 
+ .hero h1 {
+ font-size: 36px;
+ }
+ 
+ .hero p {
+ font-size: 18px;
+ }
+ }
+ </style>
+</head>
+<body>
+ <!-- Шапка -->
+ <header>
+ <div class="container header-container">
+ <div class="logo">Ачинск<span>Реклама</span></div>
+ <nav>
+ <ul>
+ <li><a href="#home">Главная</a></li>
+ <li><a href="#about">О нас</a></li>
+ <li><a href="#services">Услуги</a></li>
+ <li><a href="#contact">Контакты</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+
+ <!-- Раздел «Герой» -->
+ <section class="hero" id="home">
+ <div class="container hero-content">
+ <h1>Профессиональное рекламное агентство в Ачинске</h1>
+ <p>Мы создаем эффективные маркетинговые решения для роста вашего бизнеса</p>
+ <a href="#contact" class="btn">Связаться с нами</a>
+ </div>
+ </раздел>
+
+ <!— О нас —>
+ <section class="about" id="about">
+ <div class="container">
+ <div class="section-title">
+ <h2>О нашем агентстве</h2>
+ <p>Мы — креативная команда профессионалов, специализирующаяся на
+
+Мы специализируемся на разработке и реализации эффективных рекламных кампаний в Ачинске и за его пределами.
+ </div>
+ <div class="about-content">
+ <div class="about-text">
+ <p>Наше рекламное агентство было основано в Ачинске с целью предоставления качественных маркетинговых услуг местному бизнесу. За годы работы мы помогли десяткам компаний увеличить продажи и укрепить свои позиции на рынке.</p>
+ <p>В своей работе мы сочетаем глубокое понимание местного рынка с современными тенденциями цифрового маркетинга. Наш подход всегда индивидуален и направлен на достижение конкретных целей каждого клиента.
+ <p>Наши специалисты постоянно совершенствуют свои навыки и следят за последними тенденциями в мире рекламы, чтобы предлагать вам только самые эффективные решения.
+ </div>
+ <div class="about-image">
+ <img src="https://placehold.co/600x400/0066cc/white?text=Наша+команда" alt="Наша команда">
+ </div>
+ </div>
+ </div>
+ </раздел>
+
+ <!-- Услуги -->
+ <section class="services" id="services">
+ <div class="container">
+ <div class="section-title">
+ <h2>Наши услуги</h2>
+ <p>Мы предлагаем полный спектр рекламных услуг для бизнеса любого масштаба</p>
+ </div>
+ <div class="services-grid">
+ <div class="service-card">
+ <div class="service-icon">📱</div>
+ <h3>Цифровой маркетинг</h3>
+ <p>Комплексное продвижение в интернете: контекстная реклама, SEO, SMM, таргетированная реклама в социальных сетях.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon">🎨</div>
+ <h3>Разработка бренда</h3>
+ <p>Создание уникального фирменного стиля, логотипов, брендбуков и всей необходимой полиграфической продукции.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon">📺</div>
+ <h3>Медийная реклама</h3>
+ <p>Размещение рекламы на телевидении, радио, в печатных изданиях и наружная реклама по всему Ачинску.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon">📊</div>
+ <h3>Маркетинговые исследования</h3>
+ <p>Анализ рынка, изучение целевой аудитории и конкурентов для разработки эффективной рекламной стратегии.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon">✏️</div>
+ <h3>Копирайтинг</h3>
+ <p>Создание продающих текстов для сайтов, рекламных материалов, рассылок по электронной почте и социальных сетей.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon">📈</div>
+ <h3>Аналитика и отчетность</h3>
+ <p>Мониторинг эффективности рекламных кампаний и предоставление детальной отчетности по всем показателям.</p>
+ </div>
+ </div>
+ </div>
+ </раздел>
+
+ <!-- Контакты -->
+ <раздел class="contact" id="contact">
+ <div class="container">
+ <div class="section-title">
+ <h2>Свяжитесь с нами</h2>
+ <p>Готовы начать сотрудничество? Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+ </div>
+ <div class="contact-content">
+ <div class="contact-info">
+ <h3>Наши контакты</h3>
+ <p><i>📞</i> +7 (902) 918-38-98</p>
+ <p><i>📞</i> +7 (950) 999-74-41</p>
+ <p><i>✉️</i> info@achinsk-reklama.ru</p>
+<p><i>✉️</i> aa.reklama24@mail.ru</p>
+ <p><i>⏰</i> Пн-Вс: 8:00 — 20:00</p>
+ <div style="width: 100%">
+ <iframe 
+ width="100%"
+
+height="300" 
+ frameborder="0" 
+ scrolling="no" 
+ marginheight="0" 
+ marginwidth="0" 
+ src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=ru&amp;q=Ачинск+(название моего бизнеса)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+ </iframe>
+ </div>
+ </div>
+ <div class="contact-form">
+ <form>
+ <div class="form-group">
+ <label for="name">Ваше имя</label>
+ <input type="text" id="name" required>
+ </div>
+ <div class="form-group">
+ <label for="phone">Телефон</label>
+ <input type="tel" id="phone" required>
+ </div>
+ <div class="form-group">
+ <label for="email">Электронная почта</label>
+ <input type="email" id="email" required>
+ </div>
+ <div class="form-group">
+ <label for="message">Сообщение</label>
+ <textarea id="message" required></textarea>
+ </div>
+ <button type="submit" class="btn">Отправить сообщение</button>
+ </form>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Нижний колонтитул -->
+ <footer>
+ <div class="container">
+ <div class="footer-content">
+ <div class="footer-section">
+ <h3>АчинскРеклама</h3>
+ <p>Профессиональное рекламное агентство в Ачинске. Мы помогаем бизнесу развиваться с помощью эффективных маркетинговых решений.
+ </div>
+ <div class="footer-section">
+ <h3>Наши услуги</h3>
+ <p>Цифровой маркетинг</p>
+ <p>Разработка бренда</p>
+ <p>Медийная реклама</p>
+ </div>
+ <div class="footer-section">
+ <h3>Контакты</h3>
+ <p><i>📞</i> +7 (902) 918-38-98</p>
+ <p><i>📞</i> +7 (950) 999-74-41</p>
+ <p><i>✉️</i> aa.reklama24@mail.ru</p>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <p>&copy; 2025 Рекламное агентство "АчинскРеклама". Все права защищены.</p>
+ </div>
+ </div>
+ </footer>
+</body>
+</html>
